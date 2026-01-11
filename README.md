@@ -3,11 +3,11 @@
 ## Quick-Start Build Guide (Windows, VS 2022)
 
 ### One-time setup
-<!-- ```bash -->
+```bash
 git clone https://github.com/obsproject/obs-plugintemplate.git my-plugin
 cd my-plugin
 cmake --preset windows-x64   # downloads deps & generates VS solution
-
+```
 ## 1. Build the DLL (any terminal)
 cmake --build build_x64 --config Release --parallel
 
