@@ -1,3 +1,20 @@
+# UTMIST Notes for Repo
+
+## Quick-Start Build Guide (Windows, VS 2022)
+
+### One-time setup
+<!-- ```bash -->
+git clone https://github.com/obsproject/obs-plugintemplate.git my-plugin
+cd my-plugin
+cmake --preset windows-x64   # downloads deps & generates VS solution
+
+## 1. Build the DLL (any terminal)
+cmake --build build_x64 --config Release --parallel
+
+## 2. Install to OBS (admin **cmd.exe**)
+cmake --install build_x64 --config Release --prefix "%ProgramData%\obs-studio\plugins"
+
+
 # OBS Plugin Template
 
 ## Introduction
