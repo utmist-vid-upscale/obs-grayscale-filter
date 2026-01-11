@@ -4,16 +4,19 @@
 
 ### One-time setup
 ```bash
-git clone https://github.com/obsproject/obs-plugintemplate.git my-plugin
+git clone https://github.com/utmist-vid-upscale/obs-grayscale-filter.git my-plugin
 cd my-plugin
 cmake --preset windows-x64   # downloads deps & generates VS solution
 ```
 ## 1. Build the DLL (any terminal)
+```bash
 cmake --build build_x64 --config Release --parallel
+```
 
 ## 2. Install to OBS (admin **cmd.exe**)
+```bash
 cmake --install build_x64 --config Release --prefix "%ProgramData%\obs-studio\plugins"
-
+```
 
 # OBS Plugin Template
 
